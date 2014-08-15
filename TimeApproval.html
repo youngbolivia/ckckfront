@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="css/bootstrap.css" rel="stylesheet">
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top"></div>
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,19 +11,85 @@
             </button>
             <a class="navbar-brand" href="index.html">ClikClok 2.0</a>
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav nav-stacked">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#mycompany">My Company</a></li>
-              <li><a href="#clients">Clients</a></li>
-              <li><a href="#temps">Temps</a></li>
-              <li><a href="#timesheets">Timesheets</a></li>
-              <li><a href="#payroll=">Payroll</a></li>
-              <li><a href="#invoices">Invoices</a></li>
-              <li><a href="#reports">Reports</a></li>
-              <li><a href="#userpreferences">User Preferences</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          </div>
+          </div>
+          
+          <div class="col-md-3 col-lg-3" id="leftCol">
+	          <div class="collapse navbar-collapse">
+	            <ul class="nav nav-stacked">
+	              <li class="active"><a href="#">Home</a></li>
+	              <li><a href="#mycompany">My Companies</a></li>
+	              <li><a href="#clients">Clients</a></li>
+	              <li><a href="#temps">Temps</a></li>
+	              <li><a href="#timesheets">Timesheets</a></li>
+	              <li><a href="#payroll=">Payroll</a></li>
+	              <li><a href="#invoices">Invoices</a></li>
+	              <li><a href="#reports">Reports</a></li>
+	              <li><a href="#userpreferences">User Preferences</a></li>
+	            </ul>
+	          </div><!--/.nav-collapse -->
+          </div><!--------NAV-BAR---------- -->
+          <div class="col-md-9">
+
+<div class="table-responsive">
+    <div class="row"></div>
+    <table class="table table-condensed table-striped table-bordered table-hover no-margin" id="datatable">
+        <thead>
+            <tr>
+                <th style="width:5%">Approve Timesheet</th>
+                <th style="width:5%">No Hours</th>
+                <th style="width:15%" class="hidden-sm">Week Ending</th>
+                <th style="width:25%" class="hidden-sm">Temp Name</th>
+                <th style="width:15%" class="hidden-sm">Temp Status</th>
+                <th style="width:15%" class="hidden-sm">Manager Status</th>
+                <th style="width:5%" class="hidden-sm">Hours</th>
+                <th style="width:15%" class="hidden-sm">TimeSheet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" class="no-margin"></td>
+                <td><input type="checkbox" class="no-margin"></td>
+                <td class="hidden-sm">Agile #555</td>
+                <td class="hidden-sm"> <span class="label label label-info">New</span></td>
+                <td class="hidden-sm">15 - 10 - 2013</td>
+                <td class="hidden-sm">
+	                <div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-xs dropdown-toggle" data-original-title="" title="">Action 
+                    
+                    
+                    
+                    <span class="caret"></span>
+                    </button>
+                    </div>
+                </td>
+                <td class="hidden-sm"></td>
+                <td class="hidden-sm">
+                    
+                        <div class="row"></div> </td>
+                        <ul class="dropdown-menu pull-right">
+                            <li> <a href="#">Edit</a>
+
+                            </li>
+                            <li> <a href="#">Delete</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+                    </tbody>
+    </table>
+</div>
+	          
+	          
+	          
+	          
+	          
+	          
+          </div><!close col-9---------------------------------- -->
+          
+          
         </div>
       </div>  
  </html>
